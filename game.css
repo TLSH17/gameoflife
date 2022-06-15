@@ -1,0 +1,272 @@
+@media screen and (max-width: 992px) {   
+
+    .functionPart .pattern #glider {
+        display: none;
+    }
+
+    .pc-f {
+        display: none;
+    }
+
+    .pc-n {
+        display: none;
+    }
+
+    .pc-s {
+        display: none;
+    }
+
+    .noshow{
+        display: none;
+    }
+
+    .rulesButton {
+        margin: 2px;
+        border-style: solid;
+        padding: 2px 15px 2px 15px;
+        border-width: 1px;
+        border-radius: 10%;
+        background-color: rgb(16, 100, 16);
+        border-color: white;
+    }
+
+
+    .normalButton {
+        border-style: solid;
+        border-width: 3px;
+        margin: 2px;
+        background-color: rgba(243, 179, 59, 0.366);
+        border-color: rgb(32, 220, 220);
+        padding: 2px;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-size: x-small;
+        width: fit-content;
+    }
+
+    .function{
+        font-size: x-small;
+    }
+
+    .remark {
+        display: none;
+        color: white;
+        font-size: large;
+        font-weight: auto;
+    }
+
+    .now{
+        display: none;
+    }
+    .speedButton {
+        margin: 2px;
+        width: 100px;
+        background-color: rgb(29, 155, 155);
+        text-align: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: antiquewhite;
+        padding: 2px;
+        color: blanchedalmond;
+    }
+    .functionPart {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+
+    .gliderbutton{
+        display: none;
+    }
+
+    .patternButton {
+        border-style: solid;
+        border-color: brown;
+        border-width: 3px;
+        padding: 2px;
+        margin: 5px;
+        text-align: center;
+        color: blanchedalmond;
+        background-color: rgb(153, 73, 43);
+        font-size: 10px;
+    }
+    .richButton{
+        padding: 20px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .head{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .speedButton .mobileUI-f {
+        display: none;
+    }
+
+    .speedButton .mobileUI-n {
+        display: none;
+    }
+
+    .speedButton .mobileUI-s {
+        display: none;
+    }
+
+    .rulesButton {
+        margin: 10px 20px 10px 10px;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 10%;
+        background-color: rgb(16, 100, 16);
+        border-color: white;
+        text-align: center;
+        width: 60px;
+    }
+
+
+    .normalButton {
+        border-style: solid;
+        border-width: 3px;
+        margin: 10px;
+        background-color: rgba(243, 179, 59, 0.548);
+        border-color: rgb(32, 220, 220);
+        padding: 5px 20px 5px 20px;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .speedButton {
+        margin: 10px;
+        width: 150px;
+        background-color: rgb(29, 155, 155);
+        text-align: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: antiquewhite;
+        padding: 10px;
+        color: blanchedalmond;
+    }
+    .functionPart {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        font-weight: 700;
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+    .patternButton {
+        border-style: solid;
+        border-color: brown;
+        border-width: 3px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        color: rgb(205, 255, 249);
+        background-color: rgb(153, 73, 43);
+    }
+}
+
+.homeButton{
+    margin:20px 0px 0px 20px;
+    width: 40px;
+    background-color: darkkhaki;
+    border-style: solid;
+    border-radius: 45%;
+    padding: 3px;
+}
+
+
+body {
+    background-image: url('cyber1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+    margin: 10px;
+
+}
+
+h1 {
+    text-shadow: 0.1em 0.1em 0.1em black;
+    margin: 20px 0 10px 0;
+}
+
+#canvas{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.topPart {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+}
+
+
+.form-control-part {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+
+/* .patternNspeed{
+    display: flex;
+    justify-content: center;
+} */
+
+
+.SpeedButtonPart {
+    display: flex;
+    justify-content: center;
+
+}
+
+.littleTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.patternButtonpart{
+    display: flex;
+    justify-content: center;
+}
+
+.survival {
+    display: flex;
+    justify-content: center;
+}
+
+.changeRulesButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearAll {
+    border-style: solid;
+    color: white;
+    background-color: yellowgreen;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    border-color: black;
+}

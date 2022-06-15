@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="game.css" />
+</head>
+
+<body>
+    <a href="index.html"><img src="house.svg" alt="HomePage" class="homeButton" /></a>
+    <div style="margin: 2px;">Home Page</div>
+    <div class="head">
+        <h1>Game of Life</h1>
+    </div>
+
+    <div class="functionPart">
+        <div class="patternNspeed col-4">
+
+            <div class="littleTitle">Pattern : </div>
+            <div class="patternButtonpart">
+                <div class="btn btn-primary patternButton noshow" id="GosperGliderGun">Gosper Glider Gun</div>
+                <div class="btn btn-primary patternButton gliderbutton" id="glider">Glider</div>
+                <div class="btn btn-primary patternButton richButton" id="rich_s_p16">Rich's p16</div>
+            </div>
+            <div class="littleTitle">Speed : </div>
+
+            <div class="SpeedButtonPart">
+                <div class="btn btn-primary speedButton fast"><span class="pc-f">Fast</span><span
+                        class="mobileUI-f">F</span></div>
+                <div class="btn btn-primary speedButton normal"><span class="pc-n">Normal</span><span
+                        class="mobileUI-n">N</span></div>
+                <div class="btn btn-primary speedButton slow"><span class="pc-s">Slow</span><span
+                        class="mobileUI-s">S</span></div>
+            </div>
+
+            <!-- <div class="slidecontainer">
+                <input type="range" min="10" max="200" value="20" class="slider" id="myRange"><span id="demo"></span>
+              </div> -->
+
+            <div id="currentSpeed"></div>
+        </div>
+
+
+        <div class="function">
+
+            <div class="survival">
+                <div>Death <span class="noshow">by underpopulation </span> if neighbors less than : <span
+                        class="noshow">(Default 2)</span></div>
+            </div>
+
+            <div class="changeRulesButton">
+                <div class="btn btn-primary rulesButton dieOne">1</div>
+                <div class="btn btn-primary rulesButton dieTwo">2</div>
+                <div class="btn btn-primary rulesButton dieThree">3</div>
+                <div class="btn btn-primary rulesButton dieFour">4</div>
+                <div class="now" id="currentDieNum"></div>
+            </div>
+
+            <div class="survival">
+                <div>Death <span class="noshow">by overpopulation </span> if neighbors more than : <span
+                        class="noshow">(Default 3)</span></div>
+            </div>
+
+            <div class="changeRulesButton">
+                <div class="btn btn-primary rulesButton overOne">1</div>
+                <div class="btn btn-primary rulesButton overTwo">2</div>
+                <div class="btn btn-primary rulesButton overThree">3</div>
+                <div class="btn btn-primary rulesButton overFour">4</div>
+                <div class="now" id="currentOverNum"></div>
+            </div>
+
+            <div class="survival">
+                <div>Reproduction if neighbors more than :<span class="noshow">(Default 3)</span></div>
+            </div>
+
+            <div class="changeRulesButton">
+                <div class="btn btn-primary rulesButton birthOne">1</div>
+                <div class="btn btn-primary rulesButton birthTwo">2</div>
+                <div class="btn btn-primary rulesButton birthThree">3</div>
+                <div class="btn btn-primary rulesButton birthFour">4</div>
+                <div class="now" id="currentBirthNum"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topPart">
+        <button type="button" class="btn btn-primary normalButton" id="start">Start Game<br><span class="noshow">(Press 1)</span></button>
+        <button type="button" class="btn btn-primary normalButton" id="random">Random all condition<br><span class="noshow">(Press
+            2)</span> </button>
+        <button type="button" class="btn btn-primary normalButton" id="pause">Pause Game<br><span class="noshow">(Press 3)</span></button>
+        <button type="button" class="btn btn-primary normalButton" id="stopNclear">Stop Game & Reset<br><span class="noshow">(Press
+            4)</span></button>
+        <button type="button" class="btn btn-primary normalButton" id="clear">Clear All<br><span class="noshow">(Press 5)</span></button>
+    </div>
+
+    <div id='canvas'></div>
+
+    <div class="topPart">
+        <button type="button" class="btn btn-primary normalButton" id="generatePattern">Generate Pattern <span class="noshow">(Press
+            6)</span></button>
+    </div>
+
+    <div class="form-control-part">
+        <textarea class="form-control" placeholder="pattern" id="patternTextArea">Current Pattern</textarea>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="gamepattern.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
